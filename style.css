@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.paralax,
+.lists {
+  width: 100%;
+  height: 100vh;
+}
+
+.some {
+  width: 98.4vw;
+  height: 98.4vh;
+  border: solid 0.3vw black;
+  background: #7a7a7a;
+}
+
+.paralax {
+  overflow: hidden;
+  background: url(https://abrakadabra.fun/uploads/posts/2022-01/1642650000_1-abrakadabra-fun-p-yaponskie-oboi-na-rabochii-stol-1.jpg);
+}
+
+.lists {
+  position: absolute;
+  transform: translate3d(0px, 50px, 0px);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  position: relative;
+  display: block;
+  left: 0px;
+  top: 0px;
+  background: url("./lists.png");
+}
+
+.paralax_content {
+  margin: 30vh 4vw 0;
+  font-family: "GTWalsheimPro","Arial","Helvetica",sans-serif;
+  text-shadow: 0 0 2px black;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #fff;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+
+.paralax_content .small {
+  font-size: 0.625rem;
+}
+
+.paralax_content .big_title {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.gr_wrapper {
+  width: fit-content;
+  padding: 15px;
+  text-shadow: none;
+  border-radius: 1vw;
+  background: #fff;
+  rotate: -15deg;
+}
+
+.title_btn {
+  font-weight: bolder;
+  background: linear-gradient(90deg, #2e6ae3, #e3bf2e);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.news p {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+nav .menu {
+  width: fit-content;
+  grid-column-gap: 2.5rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  letter-spacing: 0em;
+  display: grid;
+}
+
+nav a, nav li {
+  font-size: 0.7rem;
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+
+nav a {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.menu__item {
+  padding: 0.7rem;
+  border-radius: 0.6rem;
+}
+
+.menu__item--1 {
+  background: #1dced5;
+}
+
+.menu__item--2 {
+  background: #3d81c0;
+}
+
+.menu__item--3 {
+  background: #8a57a3;
+}
+
+.menu__item--4 {
+  background: #f53c76;
+}
+
+.girl {
+  animation: girl 2s forwards;
+}
+
+@keyframes girl {
+  0% {
+    margin: 100vh 100vw 0;
+  }
+
+  100% {
+    margin: 0;
+  }
+}
+
+@media (max-width: 780px) {
+  .paralax {
+    width: 105vw;
+    height: 70vh;
+    transform: translateX(-5vw)
+  }
+
+  .paralax_content {
+    margin-top: 0;
+    transform: translate3d(50px, -1600px, 0px) !important;
+    display: block;
+  }
+
+  .big_title {
+    width: fit-content;
+  }
+}
